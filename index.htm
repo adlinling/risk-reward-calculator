@@ -7,23 +7,29 @@
 <script src="calc.js"></script>
 </head>
 
-<body>
+<body onload="calculate();">
 
 <div class="container">
 
-        <div class="title"><b>Risk/Reward Calculator for Stock Trading</b></div>
+        <div class="title"><b>Stock Trading Risk/Reward Calculator</b></div>
 
         <div class="subcontainer">
         
-        Account Size:  <input type="text" class="inputs" id="accountsize" value="10000" onkeypress="calculate();"><br>
-        Risk Percent:  <input type="text" class="inputs" id="riskpercent" value="2" onkeypress="calculate();"><br>
-        Entry Price:  <input type="text" class="inputs" id="entryprice" value="5" onkeypress="calculate();"><br>
-        Stop Price:  <input type="text" class="inputs" id="stopprice" value="4" onkeypress="calculate();"><br>
-        Target Price:  <input type="text" class="inputs" id="targetprice" value="7" onkeypress="calculate();"><br>
+        Account Size:  <input type="text" class="inputs" id="accountsize" value="10000" oninput="calculate();"><br>
+        Risk Percent:  <input type="text" class="inputs" id="riskpercent" value="2" oninput="calculate();"><br>
+        Entry Price:  <input type="text" class="inputs" id="entryprice" value="5" oninput="calculate();"><br>
+        Stop Price:  <input type="text" class="inputs" id="stopprice" value="4" oninput="calculate();"><br>
+        Target Price:  <input type="text" class="inputs" id="targetprice" value="7" oninput="calculate();"><br>
 
         <div class="outputs">
-        Number of Shares:  <span class="display" id="shares">blah</span><br>
-        Reward/Risk ratio:  <span class="display" id="ratio">blah</span>
+            Max Loss:  <span class="display" id="riskamt"></span><br>
+            Shares to Trade:  <span class="display" id="shares"></span><br>
+            Reward Amount:  <span class="display" id="rewardamt"></span><br>
+            Reward:  <span class="display" id="reward"></span><br>
+            Risk:  <span class="display" id="risk"></span><br>
+            
+            Reward/Risk ratio:  <span class="display" id="ratio"></span><br>
+            <span class="display" id="debugging"></span>
         </div>
 
     </div>
