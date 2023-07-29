@@ -30,12 +30,12 @@ function calculate(){
 	//    string += "Target:" + targetprice + "<br>";
 	//	string += "Reward:" + rewardrange + "<br>";
 
-	document.getElementById("shares").innerHTML = sharestotrade;
-	document.getElementById("rewardamt").innerHTML = rewardamt;
-	document.getElementById("reward").innerHTML = rewardrange;
-	document.getElementById("risk").innerHTML = riskrange;
-	document.getElementById("riskamt").innerHTML = maxloss;
-	document.getElementById("ratio").innerHTML = ratio;
+	document.getElementById("shares").innerHTML = sharestotrade.toFixed(2);
+	document.getElementById("rewardamt").innerHTML = rewardamt.toFixed(2);
+	document.getElementById("reward").innerHTML = rewardrange.toFixed(2);
+	document.getElementById("risk").innerHTML = riskrange.toFixed(2);
+	document.getElementById("riskamt").innerHTML = maxloss.toFixed(2);
+	document.getElementById("ratio").innerHTML = ratio.toFixed(2);
 
 	//document.getElementById("debugging").innerHTML = string;
 
