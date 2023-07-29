@@ -14,7 +14,7 @@ function calculate(){
 	var rewardrange= targetprice - entryprice;
 
 
-	document.getElementById("shares").innerHTML = "display number of shares";
-	document.getElementById("ratio").innerHTML = "display ratio";
+	document.getElementById("shares").innerHTML = "#";
+	document.getElementById("ratio").innerHTML = "#:#";
 
 }

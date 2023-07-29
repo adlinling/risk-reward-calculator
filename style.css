@@ -1,0 +1,30 @@
+.container{
+  display:block;
+  margin: 0 auto;
+  border: 1px black solid;
+  padding: 10px;
+  width:80%;
+  text-align:center;
+}
+
+
+.title{
+  text-align:center;
+  padding:10px;
+}
+
+.subcontainer{
+  margin: 0 auto;
+  padding-right:50px;
+  text-align:right;
+  max-width:300px;
+}
+
+.inputs{
+  width: 80px;
+}
+
+.outputs{
+  margin-left: auto;
+  padding-right: 60px;
+}
