@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Risk/Reward Calculator for Stock Trading
+</title>
+
+
+<style>
+.container{
+  display:block;
+  margin: 0 auto;
+  border: 1px black solid;
+  padding: 10px;
+  width:30%;
+}
+</style>
+</head>
+
+<body>
+
+
+<script>
+
+function calculate(){
+
+
+	var accountsize = document.getElementById("accountsize").value;
+	var percent = document.getElementById("riskpercent").value;
+	var riskpercent = percent/100;
+
+	var entryprice = document.getElementById("entryprice").value;
+	var stopprice = document.getElementById("stopprice").value;
+	var targetprice = document.getElementById("targetprice").value;
+
+	var riskrange= entryprice - stopprice;
+	var rewardrange= targetprice - entryprice;
+
+
+	document.getElementById("shares").innerHTML = "display number of shares";
+	document.getElementById("ratio").innerHTML = "display ratio";
+
+}
+</script>
+
+
+<div class="container">
+
+Account size:  <input type="text" class="textbox" id="accountsize" value="10000" onkeypress="calculate();"><br>
+Risk Percent:  <input type="text" class="textbox" id="riskpercent" value="2" onkeypress="calculate();"><br>
+Entry Price:  <input type="text" class="textbox" id="entryprice" value="5" onkeypress="calculate();"><br>
+Stop Price:  <input type="text" class="textbox" id="stopprice" value="4" onkeypress="calculate();"><br>
+Target Price:  <input type="text" class="textbox" id="targetprice" value="7" onkeypress="calculate();"><br>
+Number of Shares:  <div id="shares"></div><br>
+Reward/Risk ratio:  <div id="ratio"></div>
+
+</div>
+
+
+
+</body>
+
+</html>
