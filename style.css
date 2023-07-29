@@ -29,3 +29,16 @@
   padding-top: 10px;
   padding-right: 60px;
 }
+
+
+.socialcontainer{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  /*border: 1px black solid;*/
+}
+
+
+.social{
+  padding:20px;
+}
